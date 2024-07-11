@@ -1,0 +1,111 @@
+body {
+    height: 100%;
+    font-family: fat;
+    src: local(fonts/skinny.otf);
+  }
+  
+#bg {
+    display: flex;
+    justify-content: center;
+  }
+
+  .direct {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(8px);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .direct a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .direct a:hover {
+    color: #f1f1f1;
+  }
+
+  .direct .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .direct {padding-top: 15px;}
+    .direct a {font-size: 18px;}
+  }
+
+  .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  padding: 12px; /* start of zoom function */
+  background-color: green;
+  transition: transform .2s;
+  width: 95px;
+  height: 25px;
+  margin: 1 auto;
+}
+
+#main:hover {
+  transform: scale(1.5); 
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #8e958d;
+}
+
+.enter {
+  color: rgb(255, 255, 255);
+}

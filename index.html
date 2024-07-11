@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>My Webpage</title>
+<head>
+    <body>
+        <div id="direct" class="direct">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeDirect()">&times;</a>
+                <a href="#">Jaeden</a>
+                <a href="#">Gadiel</a>
+                <a href="#">Diego</a>
+                <a href="#">Home</a>
+            </div>
+            <div id="bg">
+                <!--<img src="images/Freak.png">-->
+                <button class="btn enter">- Enter -</button>
+                <h6>Diego - Jaeden - Gadiel</h6>
+                <video id="background-video" autoplay loop muted>
+                    <source src="images/wave.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div id="main">
+                <span style="font-size:30px;cursor:pointer" onclick="openDirect()">&#9776; open</span>
+            </div>
+    </body>
+</html>
