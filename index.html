@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
-    <script src="main.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
+    <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <title>My Webpage</title>
+    <title>The Freak Imporium</title>
 <head>
     <body>
         <div id="direct" class="direct">
@@ -18,15 +21,20 @@
                 <a href="#">Home</a>
             </div>
             <div id="bg">
-                <!--<img src="images/Freak.png">-->
-                <button class="btn enter">- Enter -</button>
-                <h6>Diego - Jaeden - Gadiel</h6>
+                <img id="logo" src="images/Freak.png">
+                <button class="btn enter"><b>- Enter -</b></button>
+                <h6 class="creds">Diego - Jaeden - Gadiel</h6>
                 <video id="background-video" autoplay loop muted>
-                    <source src="images/wave.mp4" type="video/mp4">
+                    <source src="images/wave.mp4" t>ype="video/mp4">
                 </video>
             </div>
             <div id="main">
                 <span style="font-size:30px;cursor:pointer" onclick="openDirect()">&#9776; open</span>
+            </div>
+            <div id="select">
+                <img class="shrd1" src="images/Shard.png">
+                <img class="shrd2" src="images/Shard.png">
+                <img class="shrd3" src="images/Shard.png">
             </div>
     </body>
 </html>

@@ -1,13 +1,20 @@
 body {
     height: 100%;
-    font-family: fat;
-    src: local(fonts/skinny.otf);
+    font-family: Arsenal SC;
+    overflow: hidden;
   }
   
 #bg {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
   }
+
+#logo {
+  width: 800px;
+}
 
   .direct {
     height: 100%;
@@ -26,20 +33,20 @@ body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #000000;
+    color: #ffffff;
     display: block;
     transition: 0.3s;
   }
   
   .direct a:hover {
-    color: #f1f1f1;
+    color: #918657;
   }
 
   .direct .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 50px;
     margin-left: 50px;
   }
   
@@ -53,7 +60,7 @@ body {
     .direct a {font-size: 18px;}
   }
 
-  .sidenav .closebtn {
+  .direct .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
@@ -65,20 +72,24 @@ body {
   transition: margin-left .5s;
   padding: 16px;
   padding: 12px; /* start of zoom function */
-  background-color: green;
   transition: transform .2s;
   width: 95px;
   height: 25px;
+  color: white;
   margin: 1 auto;
+  top: 20px;
+  left: 10px;
+  position: fixed;
 }
 
 #main:hover {
-  transform: scale(1.5); 
+  transform: scale(1.2);
+  color: #918657;
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .direct {padding-top: 15px;}
+  .direct a {font-size: 18px;}
 }
 
 #background-video {
@@ -100,6 +111,7 @@ body {
   font-size: 16px;
   cursor: pointer;
   display: inline-block;
+  font-family: Arsenal SC;
 }
 
 .btn:hover {
@@ -108,4 +120,67 @@ body {
 
 .enter {
   color: rgb(255, 255, 255);
+  backdrop-filter: blur(8px);
+  transition: transform .2s;
+  font-size: 25px;
+  margin-top: 100px;
+  width: 160px;
+  border: 3px solid rgb(255, 255, 255);
 }
+
+.enter:hover {
+  transform: scale(1.05);
+}
+
+.creds {
+  color: white;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  position: fixed;
+  top: 600px;
+  left: 715px;
+}
+/* NO TOUCH TOP - Now Shards */
+.shrd1 {
+  opacity: 0;
+  width: 230px;
+  height: 600px;
+  transition: transform .2s;
+  position: fixed;
+  top: 600px;
+  left: 335px;
+}
+
+.shrd1:hover {
+  transform: translate(10px);
+}
+
+.shrd2 {
+  opacity: 0;
+  width: 230px;
+  height: 600px;
+  transition: transform .2s;
+  position: fixed;
+  top: 600px;
+  left: 650px;
+}
+
+.shrd2:hover {
+  transform: translate(10px);
+}
+
+.shrd3 {
+  opacity: 0;
+  width: 230px;
+  height: 600px;
+  transition: transform .2s;
+  position: fixed;
+  top: 600px;
+  left: 965px;
+}
+
+.shrd3:hover {
+  transform: translate(10px);
+}
+
