@@ -17,6 +17,27 @@ $(".enter").click(function (){
   $('.shrd3').delay(1200).animate({'marginTop' : "-=550px",opacity:1}, 1400);
 });
 
+$(".shrd1").click(function (){
+  //window.location.href = 'relative/path/to/page.html';
+  $(".maple").delay(200).animate({opacity:1}, 1500);
+  $(".maple").css("top", "0px");
+  console.log ("shrd1");
+})
+
+$(".shrd2").click(function (){
+  //window.location.href = 'relative/path/to/page.html';
+  $(".maple").delay(200).animate({opacity:1}, 1500);
+  $(".maple").css("top", "0px");
+  console.log ("shrd2");
+})
+
+$(".shrd3").click(function (){
+  //window.location.href = 'relative/path/to/page.html';
+  $(".maple").delay(200).animate({opacity:1}, 1500);
+  $(".maple").css("top", "0px");
+  console.log ("shrd3");
+})
+
 //let mSel = $("#main");
 //mSel.click(function (){
 //  if(parseInt(mSel.css('left')) === 10){
