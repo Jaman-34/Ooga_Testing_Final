@@ -1,11 +1,11 @@
 function openDirect() {
   document.getElementById("direct").style.width = "250px";
-  // document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
 }
 
 function closeDirect() {
   document.getElementById("direct").style.width = "0";
-  //document.getElementById("main").style.marginLeft= "0";
+  document.getElementById("main").style.marginLeft= "0";
 }
 
 $(".enter").click(function (){
@@ -17,11 +17,11 @@ $(".enter").click(function (){
   $('.shrd3').delay(1200).animate({'marginTop' : "-=550px",opacity:1}, 1400);
 });
 
-let mSel = $("#main");
-mSel.click(function (){
-  if(parseInt(mSel.css('left')) === 10){
-    mSel.animate({'left': '250px'}, 400);
-  } else {
-    mSel.animate({'left': '10px'}, 400);
-  }
-});
+//let mSel = $("#main");
+//mSel.click(function (){
+//  if(parseInt(mSel.css('left')) === 10){
+//    mSel.animate({'left': '250px'}, 400);
+//  } else {
+//    mSel.animate({'left': '10px'}, 400);
+//  }
+//});
